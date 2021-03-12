@@ -24,48 +24,45 @@ body {
 }
 
 .card {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2fr, 1fr, 1fr, 1fr;
-    grid-template-areas: "banner banner banner"
-        ". profilePhoto ."
-        ". nameAge ."
-        ". city ."
-        "followers likes photos";
-
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background: white;
-
-    box-shadow: 0 20px 20px 20px hsla(229, 23%, 23%, 0.335);
+    box-shadow: 0 5px 50px 5px hsla(240, 1%, 30%, 0.335);
     font-size: 18px;
     font-family: 'Kumbh Sans', sans-serif;
-}
-
-#banner {
-    grid-area: banner;
+    border-radius: 15px;
 }
 
 #profilePhoto {
-    grid-area: profilePhoto;
+    float: unset;
+    margin-top: -17%;
 }
 
 #nameAge {
-    grid-area: nameAge;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
 }
 
 #city {
-    grid-area: city;
+    margin-top: -5%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 50px;
 }
 
-#followers {
-    grid-area: followers;
-}
-
-#likes {
-    grid-area: likes;
-}
-
-#photos {
-    grid-area: photos;
+.socialData {
+    max-height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid hsla(0, 0%, 59%, 0.281);
 }
 
 .attribution {
